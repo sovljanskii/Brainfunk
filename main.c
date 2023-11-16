@@ -19,12 +19,11 @@ void checkChar(char c){
 int main() {
     char c;
     _Bool loop=0;
-
+    char loopInput[50]={};
     int i=0;
 
     while ((c = getchar())!='\n'){
-        if(c=='['){ loop=1;
-            continue;}
+        if(c=='['){loop=1; continue;}
         else if (c==']'){
             while (*p>0 && *p<=127){
                 for (int j=0;j<i;j++){
@@ -41,4 +40,3 @@ int main() {
     }
     return 0;
 }
-
