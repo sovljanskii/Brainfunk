@@ -13,6 +13,7 @@ void checkChar(char c){
         case ('<'): p--; break;
         case ('.'): putchar(*p); break;
         case (','): *p=getchar(); break;
+        default : break;
     }
 }
 
